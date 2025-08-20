@@ -102,16 +102,3 @@ func Waitgroups() {
 	wg.Wait()
 	fmt.Println("Main fn ended")
 }
-
-func Waitgroups2() {
-	var wg sync.WaitGroup
-	for i := 0; i < 5; i++ {
-		wg.Add(1)
-		go func() {
-			defer wg.Done()
-			ExpensiveOp()
-		}()
-	}
-	wg.Wait()
-	fmt.Println("DONE")
-}

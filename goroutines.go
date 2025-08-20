@@ -26,17 +26,18 @@ func main() {
 }
 
 
-Output :
+Output : The order of execution of processes is diff everytime ,
+
 
 (base) ritikagupta@ritikas-MacBook-Air-2 Go % go run .
+Done in 68.625µs
+tomorrow -> 0
+tomorrow -> 1
 today -> 0
 today -> 1
 today -> 2
 today -> 3
 today -> 4
-Done in 59.792µs
-tomorrow -> 0
-tomorrow -> 1
 tomorrow -> 2
 tomorrow -> 3
 tomorrow -> 4

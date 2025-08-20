@@ -36,6 +36,7 @@ func CopyByRef() {
 
 }
 
+// Output : [deep raj mrinal] [aarav raj mrinal]
 func CopyByValue() {
 	var users []string = []string{"deep", "raj", "mrinal"}
 	var users2 []string = make([]string, len(users))

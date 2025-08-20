@@ -7,13 +7,13 @@ import "fmt"
 // It returned false because in Go, A nil map means the map has not been initialized (e.g., var m map[string]int).
 // When you use make(map[string]int), Go allocates and initializes the map’s internal data structure — so it’s not nil (even though it’s empty).
 
-// Creates Empty Maps
+// 1. Creates Empty Maps
 func CreateMaps() {
 	m := make(map[string]int) // Create map with string keys and int values
 	fmt.Println(m == nil)
 }
 
-// Create and initialise with data
+// 2. Create and initialise with data
 // Output : map[string]int
 func CreateInitialiseMaps() {
 	m := map[string]int{
@@ -27,7 +27,7 @@ func CreateInitialiseMaps() {
 	// Check if a key exists in map
 	value, exists := m["Aarav"]
 	if exists {
-		fmt.Print("Value found", value)
+		fmt.Print("Value found", value) // Returns the corresponding value for the key
 	} else {
 		fmt.Print("Value not found")
 	}
